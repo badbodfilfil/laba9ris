@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+   <title>Calculator</title>
+</h:head>
+<h:body>
+   <h2>Enter variables</h2>
+  <h:form>
+      <h:outputText value="Rows:"/>
+      <h:inputText value="#{myBean.n}"></h:inputText>
+      <h:outputText value="Lines:"/>
+      <h:inputText value="#{myBean.m}"></h:inputText>
+      <h:outputText value="Range:"/>
+      <h:inputText value="#{myBean.r}"></h:inputText>
+      <h:commandButton value="Count" action="${myBean.doSomething}"></h:commandButton>
+      <br />
+      <br />
+      <h:outputText value="Your matrix: "/>
+      <h:outputText value="#{myBean.matrix}"></h:outputText>
+      <br />
+      <h:outputText value="Your result: "/>
+      <h:outputText value="#{myBean.result}"></h:outputText>
+  </h:form>
+</h:body>
+</html>
